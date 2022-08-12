@@ -1,14 +1,37 @@
-/学生成绩管理系统/td.sav
-/学生成绩管理系统/td1.sav
-/学生成绩管理系统/save.txt
-/学生成绩管理系统/oldIcon.ico
-/学生成绩管理系统/Debug/
-/学生成绩管理系统/Release/
-/学生成绩管理系统/x64/
-/学生成绩管理系统/ImageMaker/
-/学生成绩管理系统/*.cd
-/学生成绩管理系统/*.aps
-/Debug/
-/Release/
+*.pdb
+/GradeManager/.vs/
 /.vs/
-/x64/
+/ignore/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

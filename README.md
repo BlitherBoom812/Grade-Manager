@@ -64,6 +64,8 @@ author: Guoyun Tian	2022.7
 
 ##### 类的UML图
 
+![](./visio/UML.png)
+
 ### 系统调试
 
 *调试过程记录*
