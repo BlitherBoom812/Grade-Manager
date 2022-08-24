@@ -1,0 +1,5 @@
+﻿  concrete_id.cpp
+  test.cpp
+  正在生成代码...
+D:\developer\vscodeProject\BigHomework\GradeManager\GradeManager\concrete_id.cpp(127): warning C4715: “grade_id::operator<”: 不是所有的控件路径都返回值
+  GradeManager.vcxproj -> D:\developer\vscodeProject\BigHomework\GradeManager\x64\Debug\GradeManager.exe

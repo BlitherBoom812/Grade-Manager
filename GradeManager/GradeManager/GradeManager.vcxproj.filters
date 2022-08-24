@@ -14,4 +14,59 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="content_type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute_info.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="concrete_id.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="value_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="content_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="id_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="field.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="course_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="student_id.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="course_id.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="grade_id.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
