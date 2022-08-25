@@ -5,13 +5,21 @@
 */
 #include "id_type.h"
 #include <string>
-class course_id : public id_type{
+#include <typeinfo>
+class course_id : virtual public id_type{
 private:
 	std::string course_first_id;
 	int course_second_id;
 public:
+	course_id() : course_first_id(""), course_second_id(0){}
 	course_id(const std::string &first, int second) : course_first_id(first), course_second_id(second){}
-	course_id(const course_id &cp) : course_first_id(cp.course_first_id), course_second_id(cp.course_second_id){}
+	course_id(const id_type &cp) {
+		_ASSERT(typeid(cp) == typeid(*this));
+		const course_id &c = dynamic_cast<const course_id &>(cp);
+		course_first_id = c.course_first_id;
+		course_second_id = c.course_second_id;
+	}
+	course_id(const course_id &cp) : course_first_id(cp.course_first_id), course_second_id(cp.course_second_id) {}
 	virtual const std::string &get_course_first_id() const;
 	virtual int get_course_second_id() const;
 	virtual void set(const value_type &new_value);

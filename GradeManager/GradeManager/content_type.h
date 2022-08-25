@@ -18,6 +18,7 @@ class content_type : public value_type {
 private:
 	T content;
 public:
+	content_type();
 	content_type(const T &content);
 	content_type(const content_type<T> &cp);
 	const T &get_content() const;
@@ -28,6 +29,10 @@ public:
 	virtual const value_type &operator=(const value_type &value);
 	virtual bool operator==(const value_type &cmp) const;
 };
+template <class T>
+content_type<T>::content_type() {
+
+}
 template <class T>
 content_type<T>::content_type(const T &content) : content(content) {
 
@@ -76,5 +81,6 @@ const value_type &content_type<T>::operator=(const value_type &value) {
 typedef content_type<std::string> string_type;
 typedef content_type<CourseType> course_type;
 typedef content_type<GradeType> grade_type;
-
+typedef content_type<int> int_type;
+typedef content_type<double> double_type;
 #endif

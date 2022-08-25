@@ -6,12 +6,19 @@
 */
 #include "id_type.h"
 #include <string>
+#include <cassert>
+#include <typeinfo>
 
-class student_id : public id_type {
+class student_id : virtual public id_type {
 private:
 	std::string id;
 public:
-	student_id(const std::string &id) : id(id){}
+	student_id(): id("") {}
+	student_id(const std::string &id) : id(id) {}
+	student_id(const id_type &cp) {
+		_ASSERT(typeid(cp) == typeid(*this));
+		id = dynamic_cast<const student_id &>(cp).get_student_id();
+	}
 	student_id(const student_id &cp) : id(cp.id){}
 	virtual bool operator==(const value_type &cmp) const;
 	virtual const std::string &get_student_id() const;

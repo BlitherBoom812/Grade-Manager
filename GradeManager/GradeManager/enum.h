@@ -14,10 +14,9 @@ enum CourseType {
 评分制：等级制，PF制
 */
 enum GradeType {
-	Level,
+	LEVEL,
 	PF
 };
-
 /*
 颜色：白色，绿色，红色，黄色，黑色
 */

@@ -40,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -78,6 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$test(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)test\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -141,7 +143,9 @@
   <ItemGroup>
     <ClCompile Include="attribute_info.cpp" />
     <ClCompile Include="concrete_id.cpp" />
+    <ClCompile Include="concrete_info.cpp" />
     <ClCompile Include="content_type.cpp" />
+    <ClCompile Include="data.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
@@ -151,11 +155,14 @@
     <ClInclude Include="content_type.h" />
     <ClInclude Include="course_id.h" />
     <ClInclude Include="course_info.h" />
+    <ClInclude Include="data.h" />
     <ClInclude Include="enum.h" />
     <ClInclude Include="field.h" />
     <ClInclude Include="grade_id.h" />
+    <ClInclude Include="grade_info.h" />
     <ClInclude Include="id_type.h" />
     <ClInclude Include="student_id.h" />
+    <ClInclude Include="student_info.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="value_type.h" />
   </ItemGroup>
